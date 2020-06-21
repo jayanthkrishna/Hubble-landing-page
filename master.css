@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+  /* background-image:  */
+  background: url("images/bg-desktop.svg"),hsl(257, 40%, 49%,1);
+  background-repeat: no-repeat;
+  background-size: 90%,80%;
+  box-sizing: border-box;
+
+}
+
+.presentation{
+  display: inline-flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+  position:relative;
+
+
+}
+.main_image{
+  display:flex;
+
+  margin:30px 50px 30px 30px;
+  width:52%;
+
+
+}
+
+.introduction{
+  flex:1;
+
+}
+.intro-text h1{
+  font-size: 30px;
+  font-weight: bolder;
+  color:white;
+  font-family: "Poppins";
+
+}
+.intro-text p{
+  margin-top: 5px;
+  font-size: 12px;
+  color:white;
+  font-family: "Poppins"
+}
+.btn{
+  width:150px;
+  height:60px;
+  font-size:15px;
+  background: white;
+  color:hsl(257, 40%, 49%,1);
+  border-radius: 30px;
+  margin:40px 0px 0px 0px;
+  box-shadow: 0px 5px 10px -5px #000000;
+  font-family: "Poppins"
+}
+.btn:hover{
+  background-color: white;
+  color: black;
+}
+.icons{
+  color:white;
+  position:absolute;
+  bottom:0;
+  right:0;
+
+}
+i{
+  border:solid 1px;
+  padding:8px;
+  border-radius: 50%;
+
+}
+
+.attribution span{
+  color:white;
+}
+
+@media only screen and (max-width:375px) {
+  .presentation{
+    display: block;
+  }
+
+  .main_image{
+
+    width:100%;
+    margin:30px 20px 20px 0px
+  }
+  .btn{
+    flex:none;
+    margin:10px 30px 0px 30px;
+    width:70%;
+    height:90%
+  }
+
+  .introduction{
+    margin:40px 25px 0px 25px
+  }
+  .intro-text h1{
+    font-size:99%;
+    font-style: bolder
+  }
+  .icons{
+
+    left:30%;
+
+    margin-bottom: 10px;
+
+
+  }
+}
